@@ -5,7 +5,7 @@ Home: https://github.com/pyoceans/gridgeo
 
 Package license: MIT
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Quick grid visualization and conversion to GIS formats
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/gridgeo-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/gridgeo-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/gridgeo-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/gridgeo-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/gridgeo-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/gridgeo-feedstock/branch/master)
