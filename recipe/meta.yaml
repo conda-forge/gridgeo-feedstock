@@ -23,8 +23,6 @@ requirements:
         - pysgrid
         - shapely
         - fiona
-        - iris
-        - cartopy
 
 test:
     imports:
