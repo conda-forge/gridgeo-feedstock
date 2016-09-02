@@ -1,4 +1,4 @@
-{% set version = "0.1.0" %}
+{% set version = "0.2.1" %}
 
 package:
     name: gridgeo
@@ -7,7 +7,7 @@ package:
 source:
     fn: v{{ version }}.tar.gz
     url: https://github.com/pyoceans/gridgeo/archive/v{{ version }}.tar.gz
-    sha256: d17f6468314b5f8f20eea6b208bddd8236e7bf668d5fd3b2d0bc5fd00f7284a5
+    sha256: 02c302fc3cd4ecb3702a96715563c3672db38dc764373a2b0eb7a5906a9388a2
 
 build:
     number: 0
@@ -23,7 +23,6 @@ requirements:
         - pysgrid
         - shapely
         - fiona
-        - cartopy
 
 test:
     imports:
@@ -32,7 +31,7 @@ test:
 about:
     home: https://github.com/pyoceans/gridgeo
     license: MIT
-    summary: Quick grid visualization and conversion to GIS formats
+    summary: 'Quick grid visualization and conversion to GIS formats.'
 
 extra:
     recipe-maintainers:
