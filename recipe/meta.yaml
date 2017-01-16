@@ -1,38 +1,39 @@
 {% set version = "0.2.1" %}
 
 package:
-    name: gridgeo
-    version: {{ version }}
+  name: gridgeo
+  version: {{ version }}
 
 source:
-    fn: v{{ version }}.tar.gz
-    url: https://github.com/pyoceans/gridgeo/archive/v{{ version }}.tar.gz
-    sha256: 02c302fc3cd4ecb3702a96715563c3672db38dc764373a2b0eb7a5906a9388a2
+  fn: v{{ version }}.tar.gz
+  url: https://github.com/pyoceans/gridgeo/archive/v{{ version }}.tar.gz
+  sha256: 02c302fc3cd4ecb3702a96715563c3672db38dc764373a2b0eb7a5906a9388a2
 
 build:
-    number: 0
-    script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
-        - pyugrid
-        - pysgrid
-        - shapely
-        - fiona
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - pyugrid
+    - pysgrid
+    - shapely
+    - fiona
 
 test:
-    imports:
-        - gridgeo
+  imports:
+    - gridgeo
 
 about:
-    home: https://github.com/pyoceans/gridgeo
-    license: MIT
-    summary: 'Quick grid visualization and conversion to GIS formats.'
+  home: https://github.com/pyoceans/gridgeo
+  license: MIT
+  license_file: LICENSE.txt
+  summary: 'Quick grid visualization and conversion to GIS formats.'
 
 extra:
-    recipe-maintainers:
-        - ocefpaf
+  recipe-maintainers:
+    - ocefpaf
