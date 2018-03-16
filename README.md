@@ -14,9 +14,7 @@ Summary: Quick grid visualization and conversion to GIS formats.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/gridgeo-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/gridgeo-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/gridgeo-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/gridgeo-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/gridgeo-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/gridgeo-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/gridgeo-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/gridgeo-feedstock)
 
 Current release info
 ====================
