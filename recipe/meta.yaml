@@ -1,28 +1,26 @@
-{% set version = "0.2.1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: gridgeo
   version: {{ version }}
 
 source:
-  fn: v{{ version }}.tar.gz
-  url: https://github.com/pyoceans/gridgeo/archive/v{{ version }}.tar.gz
-  sha256: 02c302fc3cd4ecb3702a96715563c3672db38dc764373a2b0eb7a5906a9388a2
+  url: https://pypi.io/packages/source/g/gridgeo/gridgeo-{{ version }}.tar.gz
+  sha256: 5ac5fee3aa3758f84eef4c1b56ffde01970370f2a5ab930efb917de89d93f6f3
 
 build:
+  noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
-    - python
-    - setuptools
+    - python >=3.6
+    - pip
   run:
-    - python
-    - pyugrid
-    - pysgrid
+    - python >=3.6
+    - netcdf4
     - shapely
-    - fiona
 
 test:
   imports:
