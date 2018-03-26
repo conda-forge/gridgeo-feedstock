@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: gridgeo
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/gridgeo/gridgeo-{{ version }}.tar.gz
-  sha256: 5ac5fee3aa3758f84eef4c1b56ffde01970370f2a5ab930efb917de89d93f6f3
+  sha256: 107c9068115116b952213a3236444718b0eec52db30f01c023cb1742cd26c8d4
 
 build:
   noarch: python
