@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "1.2.0" %}
 
 package:
   name: gridgeo
@@ -6,12 +6,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/gridgeo/gridgeo-{{ version }}.tar.gz
-  sha256: 107c9068115116b952213a3236444718b0eec52db30f01c023cb1742cd26c8d4
+  sha256: a1530cd973daa7bd3621a0d720fa790d20709012987367eca119802eeac83055
 
 build:
-  noarch: python
   number: 0
+  noarch: python
   script: python -m pip install --no-deps --ignore-installed .
+  entry_points:
+    - gridio = gridgeo.gridio:main
 
 requirements:
   build:
@@ -21,10 +23,13 @@ requirements:
     - python >=3.6
     - netcdf4
     - shapely
+    - docopt
 
 test:
   imports:
     - gridgeo
+  commands:
+    - gridio -h
 
 about:
   home: https://github.com/pyoceans/gridgeo
