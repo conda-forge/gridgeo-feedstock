@@ -14,12 +14,15 @@ Summary: Quick grid visualization and conversion to GIS formats.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/gridgeo-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/gridgeo-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/gridgeo-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/gridgeo-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/gridgeo/badges/version.svg)](https://anaconda.org/conda-forge/gridgeo)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/gridgeo/badges/downloads.svg)](https://anaconda.org/conda-forge/gridgeo)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-gridgeo-green.svg)](https://anaconda.org/conda-forge/gridgeo) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gridgeo.svg)](https://anaconda.org/conda-forge/gridgeo) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gridgeo.svg)](https://anaconda.org/conda-forge/gridgeo) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gridgeo.svg)](https://anaconda.org/conda-forge/gridgeo) |
 
 Installing gridgeo
 ==================
