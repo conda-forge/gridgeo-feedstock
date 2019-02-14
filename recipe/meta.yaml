@@ -1,4 +1,4 @@
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 package:
   name: gridgeo
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/gridgeo/gridgeo-{{ version }}.tar.gz
-  sha256: ebe67af0aedc41bd7537d631233217c1ef70879f59ed75a260390e204b11e5eb
+  sha256: 21082025d1b9c67be9725dd5cf2b427deffedb3719a5e201365a9a8e93de525d
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
     - gridio = gridgeo.gridio:main
 
@@ -35,7 +35,7 @@ about:
   home: https://github.com/pyoceans/gridgeo
   license: MIT
   license_file: LICENSE.txt
-  summary: 'Quick grid visualization and conversion to GIS formats.'
+  summary: 'Quick grid visualization and conversion to GIS formats'
 
 extra:
   recipe-maintainers:
