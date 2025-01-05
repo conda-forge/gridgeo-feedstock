@@ -5,27 +5,29 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/g/gridgeo/gridgeo-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/g/gridgeo/gridgeo-{{ version }}.tar.gz
   sha256: 07da02062558d76f565b766fe71f3b46aa3bd3a65fb5579a8140cc8052afeff8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
     - gridio = gridgeo.gridio:main
 
 requirements:
-  build:
-    - python >=3.6
+  host:
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - netcdf4
     - shapely
     - docopt
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - gridgeo
   commands:
